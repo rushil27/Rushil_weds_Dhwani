@@ -386,3 +386,95 @@ a.btn:focus{outline: 0;}
 
 .btn-skin {color: #fff;background-color: #DE5781;min-width: 110px;}
 .btn-skin:hover {color: #fff;background-color: #333;}
+
+.aslide {
+    border: 5px #dddddd;
+    border-radius: 3px;
+    border-style: solid;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.pt-perspective {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	perspective: 1200px;
+	transform-style: preserve-3d;
+}
+
+.pt-page {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	visibility: hidden;
+	overflow: hidden;
+	backface-visibility: hidden;
+	transform: translate3d(0, 0, 0);
+}
+
+.pt-page-current,
+.no-js .pt-page {
+	visibility: visible;
+}
+
+.no-js body {
+	overflow: auto;
+}
+
+.pt-page-ontop {
+	z-index: 999;
+}
+
+.pt-page-scaleDown {
+	animation: scaleDown .7s ease both;
+}
+
+.pt-page-scaleUp {
+	animation: scaleUp .7s ease both;
+}
+
+.pt-page-scaleUpDown {
+	animation: scaleUpDown .5s ease both;
+}
+
+.pt-page-scaleDownUp {
+	animation: scaleDownUp .5s ease both;
+}
+
+.pt-page-scaleDownCenter {
+	animation: scaleDownCenter .4s ease-in both;
+}
+
+.pt-page-scaleUpCenter {
+	animation: scaleUpCenter .4s ease-out both;
+}
+
+/************ keyframes ************/
+
+/* scale and fade */
+
+@keyframes scaleDown {
+	to { opacity: 0; transform: scale(.8); }
+}
+
+@keyframes scaleUp {
+	from { opacity: 0; transform: scale(.8); }
+}
+
+@keyframes scaleUpDown {
+	from { opacity: 0; transform: scale(1.2); }
+}
+
+@keyframes scaleDownUp {
+	to { opacity: 0; transform: scale(1.2); }
+}
+
+@keyframes scaleDownCenter {
+	to { opacity: 0; transform: scale(.7); }
+}
+
+@keyframes scaleUpCenter {
+	from { opacity: 0; transform: scale(.7); }
+}
