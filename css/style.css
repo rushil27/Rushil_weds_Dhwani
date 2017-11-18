@@ -260,7 +260,7 @@ article .excerpt p{color: #888;margin: 10px 0;}
 article .dropcap {font-size: 70px;line-height: 70px;font-weight: 500;float: left;margin-right: 20px;}
 
 @media(max-width:768px) {
-	article .art-content { height: 250px; }
+	article .art-content { height: 450px; }
 }
 
 /* ---------------------------------------------------------------------------- */
