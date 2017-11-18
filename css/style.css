@@ -162,7 +162,12 @@ body.sub-page .logo {margin: -30px 0 80px;background: url(../images/bg.jpg) no-r
 .box-content.box-1 .box-item h3{color: #363638;font-size:1.5em;text-transform:uppercase;}
 .box-content.box-1 .box-item p{font-family: Arial, Helvetica, sans-serif;font-size: 15px;color:#816943;line-height: 25px;margin: 0.5em auto 0.8em auto;width: 90%;}
 
-@media(min-width:768px) {.box-content.box-1 .box-item img{position:absolute; top:-30%;left:30%;border:3px solid #eee;}}
+@media(min-width:768px) {
+	.box-content.box-1 .box-item img{position:absolute; top:-30%;left:30%;border:3px solid #eee;}
+}
+@media(max-width:768px) {
+	.box-content.box-1 .box-item.right{ margin-top: 0px }
+}
 
 /* ---------------------------------------------------------------------------- */
 /* -------------------------------------Box 2---------------------------------- */
