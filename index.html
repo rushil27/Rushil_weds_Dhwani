@@ -222,12 +222,12 @@
 							</a>
 							<h3>Rushil Story</h3>
 							<p>
-								Love stories never have endings, and ours is just started..<br>
-								I was always in search of a girl, who can give more important to the family than only me and down to earth for her ability.
-								Its very hard to find a true friend and love, but she holds both the quality. She always tries to learn quality from
-								other. I don't know whether she is a better person or not, but she is Perfect for me. She makes me happier than I
-								ever thought I could be, and I will spend rest of my life, trying to make her feel the same way. Thank you for being
-								my soulmate.
+								Love stories never have endings, and ours is just started..
+								<br> I was always in search of a girl, who can give more important to the family than only me and down to earth for her
+								ability. Its very hard to find a true friend and love, but she holds both the quality. She always tries to learn
+								quality from other. I don't know whether she is a better person or not, but she is Perfect for me. She makes me happier
+								than I ever thought I could be, and I will spend rest of my life, trying to make her feel the same way. Thank you
+								for being my soulmate.
 							</p>
 						</div>
 					</div>
@@ -717,6 +717,8 @@
 		</div>
 	</footer>
 
+	<audio id="my_audio" src="images/audio/song.mp3" loop="loop"></audio>
+
 	<!-- Core JavaScript Files -->
 	<script src="js/bootstrap.min.js"></script>
 
@@ -728,6 +730,10 @@
 	<!-- Countdown -->
 	<script src="js/jquery.mb-comingsoon.min.js"></script>
 	<script type="text/javascript">
+		$(document).ready(function () {
+			$("#my_audio").get(0).play();
+		});
+
 		$(function () {
 			$('#myCounter').mbComingsoon({ expiryDate: new Date(2017, 11, 3, 12, 15), speed: 100 });
 			setTimeout(function () {
